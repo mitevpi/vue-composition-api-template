@@ -58,28 +58,4 @@ export default {
 </script>
 
 <style scoped>
-button {
-  margin: 5px 5px 5px 5px;
-}
-.myButton {
-  background-color: #44c767;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #18ab29;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 14px;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-.myButton:hover {
-  background-color: #5cbf2a;
-}
-.myButton:active {
-  position: relative;
-  top: 1px;
-}
 </style>

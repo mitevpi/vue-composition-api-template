@@ -16,6 +16,11 @@ export default new Router({
       path: "/counter-vuex",
       name: "counter-vuex",
       component: () => import("./components/CounterVuex.vue")
+    },
+    {
+      path: "/counter-vuex-hooks",
+      name: "counter-vuex-hooks",
+      component: () => import("./components/CounterVuexHooks.vue")
     }
   ]
 });
