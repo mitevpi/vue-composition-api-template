@@ -1,4 +1,4 @@
-<img src="https://cdn.auth0.com/blog/vuejs/vue-logo.png" alt="Vue.js" width="150"/>
+<img src="https://cdn.auth0.com/blog/vuejs/vue-logo.png" alt="Vue.js" width="100"/>
 
 # Vue 3.0 Composition API Starter Template
 
