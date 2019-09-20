@@ -1,6 +1,6 @@
 # Vue Starter Template
 
-A Vue.js 2.0 full project starter template including best practices for code styling, testing, and building.
+A Vue.js 3.0 full project starter template including best practices for code styling, testing, and building. Also incorporates the (soon to be released) [Composition API](https://vue-composition-api-rfc.netlify.com/).
 
 ## Usage
 
@@ -8,10 +8,11 @@ Fork, download, or clone this repository and use it as a starting point for your
 
 ## Added/Updated Configurations to Vue CLI Starter
 
-1. AirBnB Style Guide
-2. Prettier Style guide
-3. Jest (Unit Testing)
-4. ESLint (Style Enforcing)
+1. [AirBnB Style Guide](https://github.com/airbnb/javascript)
+2. [Prettier Style Guide](https://prettier.io/)
+3. [Jest (Unit Testing)](https://jestjs.io/)
+4. [ESLint (Style Enforcing)](https://eslint.org/)
+5. [Composition API](https://vue-composition-api-rfc.netlify.com/)
 
 ## Commands
 
