@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ "HI" }}</h2>
+    <h2>{{ "Welcome to Your Vue.js Functional API App With Vuex" }}</h2>
     <button class="myButton" @click="increment">Increment</button>
     <button class="myButton" @click="double">Double</button>
 
@@ -11,36 +11,29 @@
 
 <script>
 import { reactive, computed, watch, onMounted } from "@vue/composition-api";
+import store from "../store";
 
 export default {
   setup() {
     const state = reactive({
-      count: 0,
-      status: "",
+      count: computed(() => store.getters.number),
+      status: computed(() => store.getters.status),
       doubleValue: computed(() => state.count * 2),
       squareValue: computed(() => state.count * state.count)
     });
 
     // MATH OPERATIONS
     function increment() {
-      state.count++;
-      state.status = "Incremented";
+      store.dispatch("INCREMENT_NUMBER");
     }
 
     function double() {
-      state.count *= 2;
-      state.status = "Doubled";
-    }
-
-    // STATUS OPERATIONS
-    function welcomeMessage() {
-      state.status = "App Loaded";
+      store.dispatch("DOUBLE_NUMBER");
     }
 
     // LIFECYCLE HOOKS
     watch(() => console.log(state.count));
-
-    onMounted(() => welcomeMessage());
+    onMounted(() => store.dispatch("SET_STATUS", "Vuex Counter Loaded"));
 
     return {
       state,

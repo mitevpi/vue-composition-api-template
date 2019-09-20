@@ -16,8 +16,7 @@ export default new Router({
     {
       path: "/counter-vuex",
       name: "counter-vuex",
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/CounterVuex.vue")
+      component: () => import("./views/CounterVuex.vue")
     }
   ]
 });

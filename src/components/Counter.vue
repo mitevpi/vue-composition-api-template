@@ -40,7 +40,7 @@ export default {
 
     // STATUS OPERATIONS
     function welcomeMessage() {
-      state.status = "App Loaded";
+      state.status = "Counter Loaded";
     }
 
     // LIFECYCLE HOOKS
