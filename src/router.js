@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
 
 Vue.use(Router);
 
@@ -11,12 +10,12 @@ export default new Router({
     {
       path: "/",
       name: "counter",
-      component: Home
+      component: () => import("./views/Home.vue")
     },
     {
       path: "/counter-vuex",
       name: "counter-vuex",
-      component: () => import("./views/CounterVuex.vue")
+      component: () => import("./components/CounterVuex.vue")
     }
   ]
 });
