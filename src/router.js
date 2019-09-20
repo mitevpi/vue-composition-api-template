@@ -10,14 +10,14 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
+      name: "counter",
       component: Home
     },
     {
-      path: "/about",
-      name: "about",
+      path: "/counter-vuex",
+      name: "counter-vuex",
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
+        import(/* webpackChunkName: "about" */ "./views/CounterVuex.vue")
     }
   ]
 });

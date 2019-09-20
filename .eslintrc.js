@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     "no-console": "off",
     "prettier/prettier": "warn",
+    "no-param-reassign": "warn",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
     "vue/singleline-html-element-content-newline": "off",
     "vue/require-default-prop": "off",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ msg }}</h2>
+    <h2>{{ "HI" }}</h2>
     <button class="myButton" @click="increment">Increment</button>
     <button class="myButton" @click="double">Double</button>
 
@@ -13,12 +13,6 @@
 import { reactive, computed, watch, onMounted } from "@vue/composition-api";
 
 export default {
-  props: {
-    msg: {
-      type: String,
-      required: true
-    }
-  },
   setup() {
     const state = reactive({
       count: 0,

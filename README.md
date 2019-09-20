@@ -1,4 +1,6 @@
-# Vue Starter Template
+<img src="https://cdn.auth0.com/blog/vuejs/vue-logo.png" alt="Vue.js" width="200"/>
+
+# Vue 3.0 Composition API Starter Template
 
 A Vue.js 3.0 full project starter template including best practices for code styling, testing, and building. Also incorporates the (soon to be released) [Composition API](https://vue-composition-api-rfc.netlify.com/).
 
