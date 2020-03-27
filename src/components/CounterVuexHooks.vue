@@ -20,7 +20,7 @@ export default {
     const { status, setStatus } = useStatus();
 
     // LIFECYCLE HOOKS
-    watch(() => console.log(number));
+    watch(number, () => console.log(number.value));
     onMounted(() => setStatus("Vuex Counter Loaded"));
 
     return {
